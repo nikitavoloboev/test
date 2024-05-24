@@ -1,0 +1,39 @@
+"""
+De-prioritizes a fragment, causing the fragment to be omitted in the initial response and delivered as a subsequent response afterward.
+"""
+directive @defer(
+  """When true fragment may be deferred"""
+  if: Boolean! = true
+
+  """
+  This label should be used by GraphQL clients to identify the data from patch responses and associate it with the correct fragment.
+  """
+  label: String
+) on INLINE_FRAGMENT | FRAGMENT_SPREAD
+
+"""Indicates that an input object is a oneOf input object"""
+directive @oneOf on INPUT_OBJECT
+
+type GoMutation {
+  postPostSayHello(input: GoMyInputInput!): GoMyOutput
+}
+
+input GoMyInputInput {
+  name: String
+}
+
+type GoMyOutput {
+  message: String
+}
+
+type GoQuery {
+  string: String
+}
+
+type Mutation {
+  go: GoMutation!
+}
+
+type Query {
+  go: GoQuery!
+}

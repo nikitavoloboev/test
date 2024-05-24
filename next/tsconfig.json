@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			},
+			{
+        "name": "@0no-co/graphqlsp",
+        // "schema": "./.grafbase/generated/schemas/schema.graphql",
+        "schema": "./gql.tada-schema.graphql",
+        "tadaOutputLocation": "./src/graphql-env.d.ts"
+      }
+		],
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"**/*.(mts|ts)"
+	],
+	"exclude": ["node_modules"]
+}
