@@ -1,18 +1,18 @@
 import { useScrollToTop } from "@react-navigation/native"
 import { useFocusEffect } from "expo-router"
-import React, { useState } from "react"
+import { useState } from "react"
 import { ActivityIndicator, StyleSheet, View, ViewToken } from "react-native"
+import { FlatList, TouchableOpacity } from "react-native-gesture-handler"
 import Animated, {
-	useAnimatedRef,
-	useSharedValue,
-	useAnimatedStyle,
-	useAnimatedScrollHandler,
-	SharedValue,
 	Extrapolation,
+	SharedValue,
 	interpolate,
+	useAnimatedRef,
+	useAnimatedScrollHandler,
+	useAnimatedStyle,
+	useSharedValue,
 } from "react-native-reanimated"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler"
 
 import { ActivityCard } from "@/components/ActivityCard"
 import { NotFound } from "@/components/NotFound"

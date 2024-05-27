@@ -1,14 +1,13 @@
 import Feather from "@expo/vector-icons/build/Feather"
 import Ionicons from "@expo/vector-icons/build/Ionicons"
-import Octicons from "@expo/vector-icons/build/Octicons"
 import MaterialCommunityIcons from "@expo/vector-icons/build/MaterialCommunityIcons"
+import Octicons from "@expo/vector-icons/build/Octicons"
 import { Tabs } from "expo-router"
-import React from "react"
 
 import { TabBarButton } from "@/components/TabBarButton"
 import { ThemedText, useThemeColor } from "@/components/Themed"
-import { theme } from "@/theme"
 import { useBookmarkStore } from "@/store/bookmarkStore"
+import { theme } from "@/theme"
 
 export default function TabLayout() {
 	const tabBarBackgroundColor = useThemeColor({
