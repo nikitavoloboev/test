@@ -4,4 +4,6 @@ I test all things in `~/test`, create a folder there like [jazz](https://github.
 
 All test repos end with `-test` suffix and can be seen [here](https://github.com/nikitavoloboev?tab=repositories&q=-test&type=source).
 
+There is also a repo for [archives of some test repos](https://github.com/nikitavoloboev/past-test).
+
 [![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikitavoloboev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)
